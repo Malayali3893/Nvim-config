@@ -1,4 +1,4 @@
-echo "updating packages"
+jiecho "updating packages"
 pkg update -y 
 echo "upgrading packages"
 pkg upgrade -y
@@ -12,9 +12,11 @@ pkg install make gcc
 pkg install neovim
 pip install python-lsp-server[all] pynvim
 echo "cloning config to .config"
-git clone https://github.com/Malayali3893/Nvim-config.git ~/.config
-rm run.sh 
+git clone https://github.com/Malayali3893/Nvim-config.git 
+cp Nvim-config/nvim .config/
+
 
 echo "type nvim and done!"
+
 
 
