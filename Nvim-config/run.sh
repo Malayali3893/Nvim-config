@@ -1,4 +1,4 @@
-jiecho "updating packages"
+echo "updating packages"
 pkg update -y 
 echo "upgrading packages"
 pkg upgrade -y
